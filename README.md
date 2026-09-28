@@ -1,3 +1,4 @@
 ### 첫 React-native 컴포넌트 만들어보기
 
 ##### EXPO 를 이용하여 React-native 환경 세팅 + 기본 컨포넌트 버튼을 만들어 화면에 뛰우기
+##### 기본적인 React-native 구조 이해하기
