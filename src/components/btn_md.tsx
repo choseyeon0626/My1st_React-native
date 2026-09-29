@@ -14,6 +14,7 @@ export default function Mybtn({title}: MybtnText) {
 
 const styles = StyleSheet.create({
     button: {
+        width: 240,
         padding: 15,
         borderRadius: 12,
         backgroundColor: '#222',
