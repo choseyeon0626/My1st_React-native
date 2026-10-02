@@ -1,14 +1,29 @@
-import { Pressable, Text, StyleSheet } from 'react-native';
+import React, {useRef} from 'react';
+import { Pressable, Text, StyleSheet, Animated } from 'react-native';
 
 type MybtnText = {
     title: string;
 };
 
-export default function Mybtn({title}: MybtnText) {
+export default function Mybtn({ title }: MybtnText) {
+    const colorAnim = useRef(new Animated.Value(0)).current;
+    const boxColor = colorAnim.interpolate({
+        inputRange: [0,1],
+        outputRange: ['#000000','#444444'],
+    })
+    const handlePress = () => {
+        alert('버튼이 클릭 되었습니다.')
+    }
+
+
     return (
-        <Pressable style={styles.button}>
+        <view>
+        <Pressable style={styles.button} onPress={handlePress} onPressIn={handlePressIn} onPressOut={handlePressout}>
+            <Animated.View>
             <Text style={styles.text}>{title}</Text>
+            </Animated.View>
         </Pressable>
+        </view>
     );
 }
 
