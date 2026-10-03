@@ -1,7 +1,8 @@
-import { View,StyleSheet} from "react-native";
-import { router, useLocalSearchParams } from "expo-router";
+import { View, StyleSheet } from "react-native";
+import { router, Stack, useLocalSearchParams } from "expo-router";
 import BodyText from "@/components/BodyText";
-import MybtnS from "@/components/btn_S";
+import BodyTextSans from "@/components/BodyTextSans";
+import Mybtn from "@/components/btn_md";
 
 export default function ResultScreen() {
     let result;
@@ -48,7 +49,13 @@ export default function ResultScreen() {
     }
     return (
         <View style={styles.container}>
-            <MybtnS title="다시 시작" onPress={() => router.push("/Q1")} />
+            <Stack.Screen options={{
+                headerShown: false,
+            }}
+            />
+            <BodyText Body={result.title} />
+            <BodyTextSans Body={result.description} />
+            <Mybtn title="다시 시작" onPress={() => router.push("/start_from")} />
         </View>
     );
 }
