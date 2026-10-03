@@ -1,5 +1,5 @@
 import { View, StyleSheet } from "react-native";
-import { Stack } from "expo-router";
+import { router, Stack } from "expo-router";
 import Mybtn from "@/components/btn_md";
 import Logo from "@/components/Logo";
 import BodyText from "@/components/BodyText";
@@ -13,7 +13,7 @@ export default function HomeScreen() {
             }}
             />
             <BodyText Body="당신은 어떤 마법소녀일까요?" />
-            <Mybtn title="들어가기" />
+            <Mybtn title="들어가기" onPress={() => router.push('/from')} />
         </View>
     );
 }

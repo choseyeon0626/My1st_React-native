@@ -1,19 +1,17 @@
 import { Pressable, Text, StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 
-type MybtnText = {
-    title: string;
-    onPress: () => void;
+type frombtnText = {
+    text: string;
 };
 
-export default function Mybtn({ title, onPress }: MybtnText) {
+export default function FromBtn({ text }: frombtnText) {
     return (
         <Pressable style={({ pressed }) => [
             styles.button, pressed && { backgroundColor: '#555' }
         ]}
-        onPress={onPress}
         >
-            <Text style={styles.text}>{title}</Text>
+            <Text style={styles.text}>{text}</Text>
         </Pressable>
     );
 }
@@ -23,7 +21,9 @@ const styles = StyleSheet.create({
         width: 340,
         paddingVertical: 16 ,
         borderRadius: 12,
-        backgroundColor: '#A9DAF9',
+        backgroundColor: '#Fff',
+        borderWidth: 1,
+        borderColor: '#ddd',
         alignItems: 'center',
     },
 
@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
         color: '#444',
         textAlign: 'center',
         fontFamily: 'GraceSerif-Bold',
-        fontSize: 14,
+        fontSize: 12,
     }
 });
