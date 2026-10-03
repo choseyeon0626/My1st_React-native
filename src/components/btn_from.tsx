@@ -32,12 +32,7 @@ const styles = StyleSheet.create({
     text: {
         color: '#444',
         textAlign: 'center',
-<<<<<<< HEAD
         fontFamily: 'noto-sans-kr-regular',
         fontSize: 14,
-=======
-        fontFamily: 'GraceSerif-Bold',
-        fontSize: 12,
->>>>>>> 27f1d331f2e5488060d370f2327b2ef7d3cd959b
     }
 });
