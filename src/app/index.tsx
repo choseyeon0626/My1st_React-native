@@ -1,17 +1,29 @@
 import { View, StyleSheet } from "react-native";
 import { router, Stack } from "expo-router";
+import { useVideoPlayer, VideoView } from 'expo-video';
+
 import Mybtn from "@/components/btn_md";
 import Logo from "@/components/Logo";
 import BodyText from "@/components/BodyText";
 
 export default function HomeScreen() {
+
+    const Player = useVideoPlayer(require('@/assets/video/ICONIC_HEART.mp4'),
+        (player) => { player.loop = true; player.muted = true; player.play(); });
+
     return (
         <View style={styles.container}>
-            <Logo />
+            <VideoView
+                player={Player}
+                style={styles.backgroundVideo}
+                nativeControls={false}
+                contentFit="cover"
+            />
             <Stack.Screen options={{
                 headerShown: false,
             }}
             />
+            <Logo />
             <BodyText Body="당신은 어떤 마법소녀일까요?" />
             <Mybtn title="시작하기" onPress={() => router.push('/start_from')} />
         </View>
@@ -26,5 +38,12 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff",
         paddingVertical: 80,
         gap: 40,
+    },
+    backgroundVideo: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
     },
 });
