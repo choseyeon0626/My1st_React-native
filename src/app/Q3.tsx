@@ -2,23 +2,24 @@ import { View, StyleSheet } from "react-native";
 import { router, Stack } from "expo-router";
 import BodyText from "@/components/BodyText";
 import FromBtn from "@/components/btn_from";
-import MyBtn from "@/components/btn_md";
 
 export default function HomeScreen() {
+    const addScore = (score: number) => {
+        router.push({ pathname: '/Q4', params: { score: String(score) } });
+    }
     return (
         <View style={styles.container}>
             <Stack.Screen options={{
                 headerShown: false,
             }}
             />
-            <BodyText Body="#2/8" />
-            <BodyText Body="I cannot focus on anything but you baby I cannot focus on" />
+            <BodyText Body="#3/8" />
+            <BodyText Body="같이 걷자 난 다 궁금해" />
             <View style={styles.wrapbtn}>
-                <FromBtn text="초점 뒤의 흐릿한" />
-                <FromBtn text="반투명한 My view baby" />
-                <FromBtn text="I cannot focus on anything," />
-                <FromBtn text="on anyone but you" />
-                <MyBtn title="다음" onPress={() => router.push('/from')} />
+            <FromBtn text="이어폰 속 Playlist 뭐야 그 노래 뭔데" score={1} onPress={addScore} />
+            <FromBtn text="학교 끝남 뭐해 누구랑 친해 어떤 색 좋아" score={2} onPress={addScore} />
+            <FromBtn text="네 Style은 다 맞아 그게 너라서 더 좋아" score={3} onPress={addScore} />
+            <FromBtn text="느낌 알지 지금부터 1, 2, 3!" score={4} onPress={addScore} />
             </View>
         </View>
     );

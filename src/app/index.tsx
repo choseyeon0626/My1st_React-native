@@ -13,7 +13,7 @@ export default function HomeScreen() {
             }}
             />
             <BodyText Body="당신은 어떤 마법소녀일까요?" />
-            <Mybtn title="들어가기" onPress={() => router.push('/from')} />
+            <Mybtn title="들어가기" onPress={() => router.push('/Q1')} />
         </View>
     );
 }
