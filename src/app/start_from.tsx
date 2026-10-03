@@ -1,5 +1,6 @@
 import { View, StyleSheet } from "react-native";
 import { router, Stack } from "expo-router";
+<<<<<<< HEAD
 
 import MybtnS from "@/components/btn_S";
 import Logo from "@/components/Logo";
@@ -7,6 +8,14 @@ import BodyTextSans from "@/components/BodyTextSans";
 
 export default function HomeScreen() {
 
+=======
+import MybtnS from "@/components/btn_S";
+import Logo from "@/components/Logo";
+import BodyText from "@/components/BodyText";
+import BodyTextSans from "@/components/BodyTextSans";
+
+export default function HomeScreen() {
+>>>>>>> 27f1d331f2e5488060d370f2327b2ef7d3cd959b
     return (
         <View style={styles.container}>
             <Logo />
@@ -37,6 +46,7 @@ const styles = StyleSheet.create({
     wrapbtn: {
         flexDirection: "row",
         gap: 12,
+<<<<<<< HEAD
     },
     
     backgroundVideo: {
@@ -46,4 +56,7 @@ const styles = StyleSheet.create({
         bottom: 0,
         right: 0,
     },
+=======
+    }
+>>>>>>> 27f1d331f2e5488060d370f2327b2ef7d3cd959b
 });

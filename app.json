@@ -33,9 +33,13 @@
           "imageWidth": 76
         }
       ],
+<<<<<<< HEAD
       "expo-font",
       "expo-video",
       "expo-audio"
+=======
+      "expo-font"
+>>>>>>> 27f1d331f2e5488060d370f2327b2ef7d3cd959b
     ],
     "experiments": {
       "typedRoutes": true,
