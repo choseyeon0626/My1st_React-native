@@ -8,7 +8,7 @@ import BodyText from "@/components/BodyText";
 
 export default function HomeScreen() {
     const player = useVideoPlayer(
-        require("@/assets/video/ICONIC_HEART.mp4"),
+        require("@/assets/videos/ICONIC_HEART.mp4"),
         (player) => {
             player.loop = true;
             player.muted = true;

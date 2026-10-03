@@ -76,8 +76,10 @@ export default function ResultScreen() {
                 nativeControls={false}
             />
             <BodyText Body={result.title} />
+            <View style={styles.warpbottom}>
             <BodyTextSans Body={result.description} />
             <Mybtn title="다시 시작" onPress={() => router.push("/start_from")} />
+            </View>
         </View>
     );
 }
@@ -90,6 +92,10 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff",
         paddingVertical: 80,
         gap: 40,
+    },
+    warpbottom: {
+        alignItems: "center",
+        gap: 20,
     },
     video: {
         position: 'absolute',
