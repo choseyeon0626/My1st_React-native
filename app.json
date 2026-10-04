@@ -26,7 +26,6 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
       ],
@@ -35,7 +34,6 @@
       "expo-audio"
     ],
     "experiments": {
-       "baseUrl": "/What_your_IS2",
       "typedRoutes": true,
       "reactCompiler": true
     }
