@@ -18,7 +18,6 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png",
       "bundler": "metro"
     },
     "plugins": [
@@ -36,7 +35,7 @@
       "expo-audio"
     ],
     "experiments": {
-       "baseUrl": "/wahts_your_ICONIC_HEART",
+       "baseUrl": "/What_your_IS2",
       "typedRoutes": true,
       "reactCompiler": true
     }
