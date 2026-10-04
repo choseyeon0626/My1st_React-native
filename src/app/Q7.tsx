@@ -19,7 +19,7 @@ export default function HomeScreen() {
             <BodyText Body="#7/8" />
             <BodyText Body="좋아하는 사람에게 내마음을 고백 할때 내방식은?" />
             <View style={styles.wrapbtn}>
-                <FromBtn text="이어폰 속 Playlist 뭐야 그 노래 뭔데" score={1} onPress={() => addScore(1)} />
+                <FromBtn text="조용히 이야기를 들어주며 곁 지키기" score={1} onPress={() => addScore(1)} />
                 <FromBtn text="오글거림 NO! 당돌한 직구로 솔직하게!" score={5} onPress={() => addScore(5)} />
                 <FromBtn text="따뜻한 장문 메시지나 선물로 살포시!" score={2} onPress={() => addScore(2)} />
                 <FromBtn text="귀여운 짤이나 유쾌한 말투로 친근하게!!" score={3} onPress={() => addScore(3)} />

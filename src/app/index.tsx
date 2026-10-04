@@ -1,10 +1,10 @@
 import { View, StyleSheet } from "react-native";
 import { router, Stack } from "expo-router";
-import { useVideoPlayer, VideoView } from "expo-video";
 
 import Mybtn from "@/components/btn_md";
 import Logo from "@/components/Logo";
-import BodyText from "@/components/BodyText";
+import ResultTextTitle from "@/components/ResultTextTitle";
+import { useVideoPlayer, VideoView } from "expo-video";
 
 export default function HomeScreen() {
     const player = useVideoPlayer(
@@ -15,27 +15,25 @@ export default function HomeScreen() {
             player.play();
         }
     );
-
     return (
         <View style={styles.container}>
+
 
             <Stack.Screen
                 options={{
                     headerShown: false,
                 }}
             />
-
             <VideoView
                 player={player}
                 style={styles.backgroundVideo}
                 nativeControls={false}
                 contentFit="cover"
             />
-
             <View style={styles.content}>
                 <Logo />
 
-                <BodyText Body="당신은 어떤 마법소녀일까요?" />
+                <ResultTextTitle Body="당신은 어떤 마법소녀일까요?" />
 
                 <Mybtn
                     title="시작하기"

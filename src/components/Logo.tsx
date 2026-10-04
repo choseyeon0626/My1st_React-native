@@ -1,6 +1,6 @@
 import { View,StyleSheet,Text } from 'react-native';
 import Logoimg from '../../assets/images/logo.svg';
-import { useFonts } from 'expo-font';
+//import { useFonts } from 'expo-font';//
 
 export default function Logo() {
   return (
