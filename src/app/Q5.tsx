@@ -17,12 +17,13 @@ export default function HomeScreen() {
             }}
             />
             <BodyText Body="#5/8" />
-            <BodyText Body="같이 걷자 난 다 궁금해" />
+            <BodyText Body="다 함께 게임을 하며 놀때 내가 맡는 역할은?" />
             <View style={styles.wrapbtn}>
-                <FromBtn text="이어폰 속 Playlist 뭐야 그 노래 뭔데" score={1} onPress={() => addScore(1)} />
-                <FromBtn text="학교 끝남 뭐해 누구랑 친해 어떤 색 좋아" score={2} onPress={() => addScore(2)} />
-                <FromBtn text="네 Style은 다 맞아 그게 너라서 더 좋아" score={3} onPress={() => addScore(3)} />
-                <FromBtn text="느낌 알지 지금부터 1, 2, 3!" score={4} onPress={() => addScore(4)} />
+                <FromBtn text="흐름을 파악해 승리로 이끄는 브레인" score={1} onPress={() => addScore(1)} />
+                <FromBtn text="룰을 지키며 내 페이스 대로 플레이" score={2} onPress={() => addScore(2)} />
+                <FromBtn text="리액션 폭발! 웃음을 담당하는 분위기 메이커" score={3} onPress={() => addScore(3)} />
+                <FromBtn text="승부욕 폭발! 화려한 입담으로 판을 지배하는 타입" score={5} onPress={() => addScore(5)} />
+                <FromBtn text="열정 만렙! 지고는 못 사는 행동파" score={4} onPress={() => addScore(4)} />
             </View>
         </View>
     );

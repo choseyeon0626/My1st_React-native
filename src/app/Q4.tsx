@@ -17,12 +17,13 @@ export default function HomeScreen() {
             }}
             />
             <BodyText Body="#4/8" />
-            <BodyText Body="같이 걷자 난 다 궁금해" />
+            <BodyText Body="뜨거운 계절을 견디기 위한 나만의 힐링 방식은?" />
             <View style={styles.wrapbtn}>
-                <FromBtn text="이어폰 속 Playlist 뭐야 그 노래 뭔데" score={1} onPress={() => addScore(1)} />
-                <FromBtn text="학교 끝남 뭐해 누구랑 친해 어떤 색 좋아" score={2} onPress={() => addScore(2)} />
-                <FromBtn text="네 Style은 다 맞아 그게 너라서 더 좋아" score={3} onPress={() => addScore(3)} />
-                <FromBtn text="느낌 알지 지금부터 1, 2, 3!" score={4} onPress={() => addScore(4)} />
+                <FromBtn text="아늑하고 정돈된 공간에서 편안하게 혼자 쉬기" score={1} onPress={() => addScore(1)} />
+                <FromBtn text="좋아하는 감성 음악을 들으며 조용히 산책하기!" score={2} onPress={() => addScore(2)} />
+                <FromBtn text="장난과 티키타카로 신나게 기분 전환하기!" score={5} onPress={() => addScore(5)} />
+                <FromBtn text="맛있는 디저트를 먹으며 친한 친구들과 신나게 수다 떨기!" score={3} onPress={() => addScore(3)} />
+                <FromBtn text="핫플 탐방이나 활동적인 취미로 시원하게 기분 전환하기!" score={4} onPress={() => addScore(4)} />
             </View>
         </View>
     );
