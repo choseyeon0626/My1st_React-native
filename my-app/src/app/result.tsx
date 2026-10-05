@@ -111,7 +111,6 @@ export default function ResultScreen() {
             <VideoView
                 style={styles.video}
                 player={Player}
-                contentFit="cover"
                 nativeControls={false}
             />
             <ResultTextTitle Body={result.title} />
