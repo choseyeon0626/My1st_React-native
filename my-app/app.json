@@ -36,7 +36,6 @@
       "expo-audio"
     ],
     "experiments": {
-       "baseUrl": "/wahts_your_ICONIC_HEART",
       "typedRoutes": true,
       "reactCompiler": true
     }
