@@ -123,10 +123,10 @@ export default function ResultScreen() {
                     <View style={styles.warptext}>
                         <ResultTextTitle Body={result.description} />
                         <ResultTextBody Body={result.details} />
-                        
+
                         <View style={styles.warpdetail2}>
-                        <ResultTextBody2 Body= { "'"+ result.name + "'"+ " 유형의 특징은?"} />
-                        <ResultTextBody Body={result.details2} />
+                            <ResultTextBody2 Body={"'" + result.name + "'" + " 유형의 특징은?"} />
+                            <ResultTextBody Body={result.details2} />
                         </View>
 
                         <ResultTextBody2 Body={result.Type} />
@@ -167,7 +167,10 @@ const styles = StyleSheet.create({
         gap: 36,
     },
     video: {
-        aspectRatio: 9 / 16,
         position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
     },
 });
