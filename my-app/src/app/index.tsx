@@ -1,5 +1,5 @@
-import { View, StyleSheet } from "react-native";
 import { router, Stack } from "expo-router";
+import { StyleSheet, View } from "react-native";
 
 import Mybtn from "@/components/btn_md";
 import Logo from "@/components/Logo";

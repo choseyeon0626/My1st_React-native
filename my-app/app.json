@@ -10,11 +10,20 @@
     "ios": {
       "icon": "./assets/expo.icon"
     },
+    
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE"
+      "backgroundColor": "#E6F4FE",
+      "package": "com.choseyeon.wahtsyouriconicheart"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ],
+      "package": "com.choseyeon0626.myapp"
     },
     "web": {
       "output": "static",
@@ -38,6 +47,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "00ab52f5-fbe8-4428-be25-5c9b3f8a8b09"
+      }
     }
   }
 }

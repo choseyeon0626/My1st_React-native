@@ -1,11 +1,11 @@
-import { View, StyleSheet, ScrollView } from "react-native";
 import { router, Stack, useLocalSearchParams } from "expo-router";
-import { VideoView, useVideoPlayer } from "expo-video";
+import { useVideoPlayer, VideoView } from "expo-video";
+import { ScrollView, StyleSheet, View } from "react-native";
 
-import ResultTextTitle from "@/components/ResultTextTitle";
-import ResultTextBody from "@/components/ResultTextBody";
 import Mybtn from "@/components/btn_md";
+import ResultTextBody from "@/components/ResultTextBody";
 import ResultTextBody2 from "@/components/ResultTextBody2";
+import ResultTextTitle from "@/components/ResultTextTitle";
 
 export default function ResultScreen() {
     let result;
@@ -167,10 +167,7 @@ const styles = StyleSheet.create({
         gap: 36,
     },
     video: {
+        aspectRatio: 9 / 16,
         position: 'absolute',
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
     },
 });
